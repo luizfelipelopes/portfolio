@@ -38,7 +38,7 @@ const Navigation = React.forwardRef((props, ref) => {
         }`}
       expand="lg"
     >
-      <Navbar.Brand className="navbar-brand" href={process.env.PUBLIC_URL + "/#home"}>
+      <Navbar.Brand className={`navbar-brand ${isTop ? "text-color" : ""}`} href={process.env.PUBLIC_URL + "/#home"}>
         {`<${mainBody.firstName} />`}
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
@@ -52,13 +52,15 @@ const Navigation = React.forwardRef((props, ref) => {
           {repos.show && (
 
             <NavLink
+              className={`${isTop ? "text-color" : ""}`}
               href={process.env.PUBLIC_URL + "/#projects"}
             >
               Projects
             </NavLink>
           )}
           <NavLink
-            className="nav-item lead"
+          className={`nav-item lead ${isTop ? "text-color" : ""}`}
+            // className="nav-item lead text-color"
             href={about.resume}
             target="_blank"
             rel="noreferrer noopener"
@@ -67,7 +69,8 @@ const Navigation = React.forwardRef((props, ref) => {
           </NavLink>
           {about.show && (
             <NavLink
-              className="nav-item lead"
+              className={`nav-item lead ${isTop ? "text-color" : ""}`}
+              // className="nav-item lead text-color"
               href={process.env.PUBLIC_URL + "/#aboutme"}
             >
               About
@@ -75,7 +78,8 @@ const Navigation = React.forwardRef((props, ref) => {
           )}
           {skills.show && (
             <NavLink
-              className="nav-item lead"
+              className={`nav-item lead ${isTop ? "text-color" : ""}`}
+              // className="nav-item lead text-color"
               href={process.env.PUBLIC_URL + "/#skills"}
             >
               Skills
