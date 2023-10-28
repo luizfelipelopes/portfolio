@@ -51,6 +51,29 @@ const about = {
   resume: "https://docs.google.com/document/d/1QZvLneLaCOiXYczBYHpteCIJTVzaGdTnOlz10dKLWRY/edit",
 };
 
+const testimonials = {
+  show: true,
+  heading: "Testimonials",
+
+  data: [
+    {
+      name: 'Nilma Nayara Neves',
+      local: 'Diamantina - MG',
+      imageLink: require("../assets/img/testimonials/testimonial-nayara.jpeg"),
+      message: 'Excelente. O Luiz foi muito profissional e responsável com tudo que eu pedi, só tenho a agradecer pela paciência e dedicação que ele teve comigo. Cumpriu o nosso contrato a risca e ainda fez além do que eu pedi, foi ótimo, parabéns!',
+      
+    },
+    {
+      name: 'Vitória Alves',
+      local: 'Curvelo - MG',
+      imageLink: require("../assets/img/testimonials/testimonial-vitoria-alves.jpeg"),
+      message: 'Incrível. Bem mais do que eu esperava, o site ficou super funcional, super prático, o Luiz Felipe ficou super disponível e conseguiu fazer todo o meu site em 1 semana! Sou muito grata, foi um ótimo trabalho. Valeu a pena o dinheiro investido.',
+    },
+  ],
+  imageSize: 100,
+  showPic: true
+};
+
 // PROJECTS SECTION
 // Setting up project lenght will automatically fetch your that number of recently updated projects, or you can set this field 0 to show none.
 //      i.e: reposLength: 0,
@@ -224,4 +247,4 @@ const portfolios = {
 //   show: false,
 // };
 
-export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences, portfolios };
+export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences, portfolios, testimonials };

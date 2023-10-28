@@ -210,3 +210,25 @@ code {
 .title-portfolio {
   font-size: 1.1rem;
 }
+
+.testimonials {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.testimonial {
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.message-testimonial {
+  font-style: italic;
+}
+
+.info-person-testimonial {
+  font-weight: 600;
+}

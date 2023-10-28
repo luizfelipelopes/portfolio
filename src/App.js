@@ -9,7 +9,8 @@ import {
   skills,
   getInTouch,
   experiences,
-  portfolios
+  portfolios,
+  testimonials
 } from "./editable-stuff/config.js";
 import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
@@ -24,6 +25,7 @@ import Leadership from "./components/home/Leadership.jsx";
 
 import Experience from "./components/home/Experience";
 import Portfolios from "./components/home/Portfolios.jsx";
+import Testimonials from "./components/home/Testimonials.jsx";
 
 const Home = React.forwardRef((props, ref) => {
   return (
@@ -44,32 +46,18 @@ const Home = React.forwardRef((props, ref) => {
           resume={about.resume}
         />
       )}
+       
       {
         experiences.show && (
           <Experience experiences={experiences}/>
         )
       }
-      {repos.show && (
-        <Project
-          heading={repos.heading}
-          username={repos.gitHubUsername}
-          length={repos.reposLength}
-          specfic={repos.specificRepos}
-        />
-      )}
-      {leadership.show && (
-        <Leadership
-          heading={leadership.heading}
-          message={leadership.message}
-          img={leadership.images}
-          imageSize={leadership.imageSize}
-        />
-      )}
-      {skills.show && (
-        <Skills
-          heading={skills.heading}
-          hardSkills={skills.hardSkills}
-          softSkills={skills.softSkills}
+      {testimonials.show && (
+        <Testimonials
+          heading={testimonials.heading}
+          data={testimonials.data}
+          imgSize={testimonials.imageSize}
+          showPic={testimonials.showPic}
         />
       )}
       {portfolios.show && (
@@ -79,6 +67,32 @@ const Home = React.forwardRef((props, ref) => {
           web={portfolios.web}
         />
       )}
+      {repos.show && (
+        <Project
+          heading={repos.heading}
+          username={repos.gitHubUsername}
+          length={repos.reposLength}
+          specfic={repos.specificRepos}
+        />
+      )}
+      {skills.show && (
+        <Skills
+          heading={skills.heading}
+          hardSkills={skills.hardSkills}
+          softSkills={skills.softSkills}
+        />
+      )}
+    
+      {leadership.show && (
+        <Leadership
+          heading={leadership.heading}
+          message={leadership.message}
+          img={leadership.images}
+          imageSize={leadership.imageSize}
+        />
+      )}
+      
+     
       
     </>
   );
