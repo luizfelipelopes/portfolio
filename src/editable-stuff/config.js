@@ -60,14 +60,14 @@ const testimonials = {
       name: 'Nilma Nayara Neves',
       local: 'Diamantina - MG',
       imageLink: require("../assets/img/testimonials/testimonial-nayara.jpeg"),
-      message: 'Excelente. O Luiz foi muito profissional e responsável com tudo que eu pedi, só tenho a agradecer pela paciência e dedicação que ele teve comigo. Cumpriu o nosso contrato a risca e ainda fez além do que eu pedi, foi ótimo, parabéns!',
+      message: 'Great. Luiz was very professional and responsible with everything I asked, I can only thank him for the patience and dedication he had with me. He fulfilled our contract to the letter and even went beyond what I asked, it was great, congratulations!',
       
     },
     {
       name: 'Vitória Alves',
       local: 'Curvelo - MG',
       imageLink: require("../assets/img/testimonials/testimonial-vitoria-alves.jpeg"),
-      message: 'Incrível. Bem mais do que eu esperava, o site ficou super funcional, super prático, o Luiz Felipe ficou super disponível e conseguiu fazer todo o meu site em 1 semana! Sou muito grata, foi um ótimo trabalho. Valeu a pena o dinheiro investido.',
+      message: "Incredible. Much more than I expected, the website was super functional, super practical, Luiz Felipe was super available and managed to create my entire website in 1 week! I'm very grateful, it was a great job. It was worth the money invested.",
     },
   ],
   imageSize: 100,
