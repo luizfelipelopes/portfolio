@@ -3,7 +3,7 @@ import { useScrollPosition } from "../hooks/useScrollPosition";
 import useResizeObserver from "../hooks/useResizeObserver";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import { mainBody, repos, about, skills } from "../editable-stuff/config.js";
+import { mainBody, repos, about, skills, testimonials, portfolios, experiences } from "../editable-stuff/config.js";
 import { NavLink } from "./home/migration";
 
 const Navigation = React.forwardRef((props, ref) => {
@@ -58,6 +58,15 @@ const Navigation = React.forwardRef((props, ref) => {
               Projects
             </NavLink>
           )}
+           {portfolios.show && (
+            <NavLink
+              className={`nav-item lead ${isTop ? "text-color" : ""}`}
+              // className="nav-item lead text-color"
+              href={process.env.PUBLIC_URL + "/#portfolios"}
+            >
+              Portfolios
+            </NavLink>
+          )}
           <NavLink
           className={`nav-item lead ${isTop ? "text-color" : ""}`}
             // className="nav-item lead text-color"
@@ -85,6 +94,25 @@ const Navigation = React.forwardRef((props, ref) => {
               Skills
             </NavLink>
           )}
+          {experiences.show && (
+            <NavLink
+              className={`nav-item lead ${isTop ? "text-color" : ""}`}
+              // className="nav-item lead text-color"
+              href={process.env.PUBLIC_URL + "/#experiences"}
+            >
+              Experiences
+            </NavLink>
+          )}
+          {testimonials.show && (
+            <NavLink
+              className={`nav-item lead ${isTop ? "text-color" : ""}`}
+              // className="nav-item lead text-color"
+              href={process.env.PUBLIC_URL + "/#testimonials"}
+            >
+              Testimonials
+            </NavLink>
+          )}
+         
         </Nav>
       </Navbar.Collapse>
     </Navbar>

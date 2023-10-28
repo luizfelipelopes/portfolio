@@ -21,7 +21,7 @@ const Portfolios = React.forwardRef(({ heading, mobile, web }, ref) => {
     portfoliosTabRef
   );
   return (
-    <Jumbotron ref={portfoliosTabRef} fluid className="bg-white m-0" id="skills">
+    <Jumbotron ref={portfoliosTabRef} fluid className="bg-white m-0" id="portfolios">
       <Container className="p-5 ">
         <h2 ref={portfoliosTabRef} className="display-4 pb-5 text-center">
           {heading}
