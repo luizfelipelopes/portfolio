@@ -2,6 +2,14 @@ html {
   font-size: 14px;
   @media (min-width: 768px) {
     font-size: 16px;
+
+    .portfolios {
+      
+      display: inline-grid;
+      grid-template-columns: repeat(auto-fit, 17rem);
+      column-gap: 10.5rem;
+    
+    }
   }
   scroll-behavior: smooth;
 }
@@ -140,5 +148,65 @@ code {
 
 .image-company {
   max-width: 200px;
-  // max-height: 100px;
+}
+
+.portfolios {
+
+  display: inline-grid;
+  grid-template-columns: repeat(auto-fit, 100%);
+  padding: 30px;
+
+}
+
+.item-portfolio {
+    margin: auto;
+    margin-bottom: 30px;
+
+
+    border-radius: 3rem;
+    border: 1px solid #f1f1f1;
+    box-shadow: 2px 2px 15px 0 #f1f1f1;
+
+    padding: 10px 10px;
+}
+
+.image-portfolio {
+  width: 100%;
+  max-width: 290px;
+  margin-top: 15px;
+}
+
+.container-links-mobile {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100px;
+
+    margin: auto;
+}
+
+.link-portfolio {
+  margin-top: -18px;
+  display: block;
+  font-size: 1rem;
+
+  text-decoration: none;
+}
+
+.link-portfolio:hover {
+  text-decoration: underline;
+}
+
+.container-links-mobile .link-portfolio {
+  margin-top: -12px;
+}
+
+.language {
+  margin-top: -18px;
+  display: block;
+
+  font-size: 0.8rem;
+}
+
+.title-portfolio {
+  font-size: 1.1rem;
 }

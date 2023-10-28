@@ -147,9 +147,81 @@ const experiences = {
   ]
 }
 
+const portfolios = {
+  show: true,
+  heading: "Portfolios",
+  mobile: [
+    {
+      name: 'App Saudável',// Here Add Company Name
+      image: require('../assets/img/portfolio/appsaudavel.png'),
+      linkAndroid: 'https://play.google.com/store/apps/details?id=com.appsaudavel',
+      linkIos: 'https://apps.apple.com/app/app-saud%C3%A1vel/id6446791063',
+      language: 'Js (React Native)'
+      
+    },
+    {
+      name: 'App Gabadi',
+      image: require('../assets/img/portfolio/appgabadi.png'),
+      linkAndroid: 'https://play.google.com/store/apps/details?id=com.appgabadi',
+      linkIos: 'https://apps.apple.com/br/app/gabadi/id6459659036',
+      language: 'Js (React Native)'
+    },
+  ],
+  web: [
+    {
+      name: 'Portfólio',// Here Add Company Name
+      image: require('../assets/img/portfolio/portfolio.png'),
+      link: 'https://portfolio-php-9745e96b81dc.herokuapp.com/',
+      language: 'PHP'
+    },
+    {
+      name: 'Cardápio Di Pizzaria',
+      image: require('../assets/img/portfolio/cardapio.png'),
+      link: 'https://portfolio-php-9745e96b81dc.herokuapp.com/cardapio/&theme=pizzaria',
+      language: 'PHP'
+    },
+    {
+      name: 'Di Pizzaria',
+      image: require('../assets/img/portfolio/pizzaria.png'),
+      link: 'https://portfolio-php-9745e96b81dc.herokuapp.com/&theme=pizzaria',
+      language: 'PHP'
+    },
+    {
+      name: 'Conferência Avante',
+      image: require('../assets/img/portfolio/ingresso.png'),
+      link: 'https://portfolio-php-9745e96b81dc.herokuapp.com/&theme=ingresso',
+      language: 'PHP'
+    },
+    {
+      name: 'Gabadi Online',
+      image: require('../assets/img/portfolio/blog-cristao.png'),
+      link: 'https://portfolio-php-9745e96b81dc.herokuapp.com/&theme=blog-cristao',
+      language: 'PHP'
+    },
+    {
+      name: 'Nilma Nayara Nutri',
+      image: require('../assets/img/portfolio/blog-nutricao.png'),
+      link: 'https://portfolio-php-9745e96b81dc.herokuapp.com/&theme=blog-saude',
+      language: 'PHP'
+    },
+    {
+      name: 'Treinamento Real (Landing Page)',
+      image: require('../assets/img/portfolio/landing-page.png'),
+      link: 'https://portfolio-php-9745e96b81dc.herokuapp.com/treinamentoreal/&theme=blog-saude',
+      language: 'PHP'
+    },
+    {
+      name: 'Cet-Rhema',
+      image: require('../assets/img/portfolio/ead.png'),
+      link: 'https://portfolio-php-9745e96b81dc.herokuapp.com/&theme=ead',
+      language: 'PHP'
+    },
+  ],
+}
+
 // Blog SECTION
 // const blog = {
 //   show: false,
 // };
 
-export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences };
+export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences, portfolios };
