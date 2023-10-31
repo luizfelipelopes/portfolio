@@ -48,7 +48,7 @@ const about = {
   imageSize: 375,
   message:
     "My name is Luiz Felipe Lopes. I’m a graduate of 2015 from Federal University of the Jequitinhonha and Mucuri Valleys with a degree in Information Systems. I'm most passionate about create things and bring it to life with code, and my goal is to pursue this passion within the field of software engineering. In my free time I like working on side projects and play bass.",
-  resume: "https://docs.google.com/document/d/1QZvLneLaCOiXYczBYHpteCIJTVzaGdTnOlz10dKLWRY/edit",
+  resume: "https://docs.google.com/document/d/1aXCaOnyxKYfSAWGd8uUn79OcZnkQ8CLj3QVS-j0NFIg/edit?usp=sharing",
 };
 
 const testimonials = {
