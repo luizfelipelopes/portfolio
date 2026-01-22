@@ -23,7 +23,7 @@ const mainBody = {
       image: "fa-linkedin",
       url: "https://www.linkedin.com/in/luizfelipelopes/",
     },
-  
+
   ],
 };
 
@@ -61,7 +61,7 @@ const testimonials = {
       local: 'Diamantina - MG',
       imageLink: require("../assets/img/testimonials/testimonial-nayara.jpeg"),
       message: 'Great. Luiz was very professional and responsible with everything I asked, I can only thank him for the patience and dedication he had with me. He fulfilled our contract to the letter and even went beyond what I asked, it was great, congratulations!',
-      
+
     },
     {
       name: 'Vitória Alves',
@@ -94,20 +94,20 @@ const leadership = {
   message:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum at varius. Libero justo laoreet sit amet cursus sit amet. Imperdiet dui accumsan sit amet nulla facilisi morbi. At auctor urna nunc id. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Et magnis dis parturient montes nascetur ridiculus mus mauris. In nisl nisi scelerisque eu ultrices vitae auctor. Mattis nunc sed blandit libero volutpat sed cras ornare. Pulvinar neque laoreet suspendisse interdum consectetur libero.",
   images: [
-    { 
-      img: require("../editable-stuff/hashirshoaeb.png"), 
-      label: "First slide label", 
-      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
+    {
+      img: require("../editable-stuff/hashirshoaeb.png"),
+      label: "First slide label",
+      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum."
     },
-    { 
-      img: require("../editable-stuff/hashirshoaeb.png"), 
-      label: "Second slide label", 
-      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
+    {
+      img: require("../editable-stuff/hashirshoaeb.png"),
+      label: "Second slide label",
+      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum."
     },
   ],
   imageSize: {
-    width:"615",
-    height:"450"
+    width: "615",
+    height: "450"
   }
 };
 
@@ -151,10 +151,16 @@ const experiences = {
   heading: "Experiences",
   data: [
     {
+      role: 'Fullstack Developer',// Here Add Company Name
+      companylogo: require('../assets/img/icts.png'),
+      date: 'Apr 2025 – Ago 2025',
+
+    },
+    {
       role: 'Software Engineer',// Here Add Company Name
       companylogo: require('../assets/img/accenture.jpeg'),
-      date: 'June 2021 – Present',
-      
+      date: 'Jun 2021 – Apr 2025',
+
     },
     {
       role: 'Developer Analyst',
@@ -180,7 +186,7 @@ const portfolios = {
       linkAndroid: 'https://play.google.com/store/apps/details?id=com.appsaudavel',
       linkIos: 'https://apps.apple.com/app/app-saud%C3%A1vel/id6446791063',
       language: 'Js (React Native)'
-      
+
     },
     {
       name: 'App Gabadi',
