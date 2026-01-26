@@ -8,7 +8,7 @@ import { Container } from "react-bootstrap";
 import { useScrollPosition } from "../../hooks/useScrollPosition";
 import PortfoliosTab from "./PortfoliosTab";
 
-const Portfolios = React.forwardRef(({ heading, mobile, web }, ref) => {
+const Portfolios = React.forwardRef(({ heading, mobile, web, frontend, backend }, ref) => {
   const portfoliosTabRef = React.useRef(null);
   const [isScrolled, setIsScrolled] = React.useState(false);
   //const navbarDimensions = useResizeObserver(navbarMenuRef);
@@ -34,6 +34,24 @@ const Portfolios = React.forwardRef(({ heading, mobile, web }, ref) => {
         >
           <Tab
             tabClassName="skills-tab lead"
+            eventKey="back-end"
+            title="Back-end"
+          >
+            <Row className="pt-3 px-1">
+              <PortfoliosTab portfolios={backend} />
+            </Row>
+          </Tab>
+          <Tab
+            tabClassName="skills-tab lead"
+            eventKey="front-end"
+            title="Front-end"
+          >
+            <Row className="pt-3 px-1">
+              <PortfoliosTab portfolios={frontend} />
+            </Row>
+          </Tab>
+          <Tab
+            tabClassName="skills-tab lead"
             eventKey="hard-skills"
             title="Mobile"
           >
@@ -50,6 +68,8 @@ const Portfolios = React.forwardRef(({ heading, mobile, web }, ref) => {
               <PortfoliosTab portfolios={web} />
             </Row>
           </Tab>
+
+
         </Tabs>
       </Container>
     </Jumbotron>

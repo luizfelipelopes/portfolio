@@ -46,10 +46,10 @@ const Home = React.forwardRef((props, ref) => {
           resume={about.resume}
         />
       )}
-       
+
       {
         experiences.show && (
-          <Experience experiences={experiences}/>
+          <Experience experiences={experiences} />
         )
       }
       {testimonials.show && (
@@ -65,6 +65,8 @@ const Home = React.forwardRef((props, ref) => {
           heading={portfolios.heading}
           mobile={portfolios.mobile}
           web={portfolios.web}
+          frontend={portfolios.frontend}
+          backend={portfolios.backend}
         />
       )}
       {repos.show && (
@@ -82,7 +84,7 @@ const Home = React.forwardRef((props, ref) => {
           softSkills={skills.softSkills}
         />
       )}
-    
+
       {leadership.show && (
         <Leadership
           heading={leadership.heading}
@@ -91,9 +93,9 @@ const Home = React.forwardRef((props, ref) => {
           imageSize={leadership.imageSize}
         />
       )}
-      
-     
-      
+
+
+
     </>
   );
 });

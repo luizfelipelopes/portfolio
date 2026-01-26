@@ -1,16 +1,18 @@
 html {
   font-size: 14px;
+
   @media (min-width: 768px) {
     font-size: 16px;
 
     .portfolios {
-      
+
       display: inline-grid;
       grid-template-columns: repeat(auto-fit, 17rem);
       column-gap: 10.5rem;
-    
+
     }
   }
+
   scroll-behavior: smooth;
 }
 
@@ -56,31 +58,38 @@ code {
   background-color: rgba(255, 255, 255, 0);
   transition: background-color 0.2s;
 }
+
 .navbar-white {
   background-color: rgba(234, 236, 239, 0.81);
   transition: background-color 0.2s;
 }
+
 .brand {
   color: #363636 !important;
 }
+
 .nav-item {
   transition: color, 0.2s;
 }
+
 .toggler {
   border: none;
   padding: 4px;
   border-radius: 4px;
+
   &:focus {
     outline: none;
     background-color: rgba(0, 0, 0, 0.05);
   }
 }
+
 .socialicons {
   color: white;
   padding-left: 5px;
   padding-right: 5px;
   transition: all 0.8s;
   margin: 4px;
+
   &:hover {
     color: black;
     padding-left: 5px;
@@ -101,9 +110,11 @@ code {
 
 .typist {
   min-height: 6rem;
+
   @media (min-width: 360px) {
     min-height: 4rem;
   }
+
   @media (min-width: 768px) {
     min-height: 2.5rem;
   }
@@ -111,15 +122,18 @@ code {
 
 .card {
   transition: transform 0.3s, box-shadow 0.3s;
+
   &:hover {
     box-shadow: 0 2rem 3rem rgba($black, 0.175) !important;
     transform: translateY(-2px);
     transition: transform 0.3s, box-shadow 0.3s;
   }
 }
+
 .skills-tabs {
   flex-grow: 1;
 }
+
 .skills-tab {
   flex-grow: 1;
   text-align: center;
@@ -127,13 +141,16 @@ code {
 
 .progress {
   transform-origin: left;
-  & > * {
+
+  &>* {
     transform: scaleX(0);
   }
 }
+
 .progress-bar-animation {
   @extend .progress;
-  & > * {
+
+  &>* {
     animation: progress 1.5s ease-in-out forwards;
   }
 }
@@ -159,15 +176,15 @@ code {
 }
 
 .item-portfolio {
-    margin: auto;
-    margin-bottom: 30px;
+  margin: auto;
+  margin-bottom: 30px;
 
 
-    border-radius: 3rem;
-    border: 1px solid #f1f1f1;
-    box-shadow: 2px 2px 15px 0 #f1f1f1;
+  border-radius: 3rem;
+  border: 1px solid #f1f1f1;
+  box-shadow: 2px 2px 15px 0 #f1f1f1;
 
-    padding: 10px 10px;
+  padding: 10px 10px;
 }
 
 .image-portfolio {
@@ -177,16 +194,19 @@ code {
 }
 
 .container-links-mobile {
-    display: flex;
-    justify-content: space-between;
-    max-width: 100px;
+  display: flex;
+  justify-content: center;
+  // justify-content: space-between;
+  // max-width: 200px;
+  // background-color: red;
+  // margin: auto;
 
-    margin: auto;
 }
 
 .link-portfolio {
   margin-top: -18px;
-  display: block;
+  margin-right: 5px;
+  // display: block;
   font-size: 1rem;
 
   text-decoration: none;

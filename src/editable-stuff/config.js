@@ -183,16 +183,18 @@ const portfolios = {
     {
       name: 'App Saudável',// Here Add Company Name
       image: require('../assets/img/portfolio/appsaudavel.png'),
-      linkAndroid: 'https://play.google.com/store/apps/details?id=com.appsaudavel',
-      linkIos: 'https://apps.apple.com/app/app-saud%C3%A1vel/id6446791063',
+      // linkAndroid: 'https://play.google.com/store/apps/details?id=com.appsaudavel',
+      // linkIos: 'https://apps.apple.com/app/app-saud%C3%A1vel/id6446791063',
+      github: 'https://github.com/luizfelipelopes/appsaudavel',
       language: 'Js (React Native)'
 
     },
     {
       name: 'App Gabadi',
       image: require('../assets/img/portfolio/appgabadi.png'),
-      linkAndroid: 'https://play.google.com/store/apps/details?id=com.appgabadi',
-      linkIos: 'https://apps.apple.com/br/app/gabadi/id6459659036',
+      // linkAndroid: 'https://play.google.com/store/apps/details?id=com.appgabadi',
+      // linkIos: 'https://apps.apple.com/br/app/gabadi/id6459659036',
+      github: 'https://github.com/luizfelipelopes/appgabadi',
       language: 'Js (React Native)'
     },
   ],
@@ -246,6 +248,67 @@ const portfolios = {
       language: 'PHP'
     },
   ],
+  frontend: [
+    {
+      name: 'Currency Converter',
+      image: require('../assets/img/portfolio/currency-converter.png'),
+      link: 'https://currency-converter-ten-beryl-94.vercel.app/',
+      github: 'https://github.com/luizfelipelopes/currency-converter',
+      language: 'React Js, Typescript'
+    },
+    {
+      name: 'Ring Siren',
+      image: require('../assets/img/portfolio/ring-siren.png'),
+      link: 'https://ring-siren.vercel.app/',
+      github: 'https://github.com/luizfelipelopes/ring-siren',
+      language: 'React Js, Typescript'
+    },
+    {
+      name: 'Pokédex',
+      image: require('../assets/img/portfolio/pokedex-fe.png'),
+      // link: 'https://ring-siren.vercel.app/',
+      github: 'https://github.com/luizfelipelopes/pokedex',
+      language: 'React Js, Typescript'
+    },
+  ],
+  backend: [
+    {
+      name: 'Currency Quote Conversion API',
+      image: require('../assets/img/portfolio/currency-quotes.png'),
+      github: 'https://github.com/luizfelipelopes/currency-quotes',
+      language: 'Node (Nest Js)'
+    },
+    {
+      name: 'Import More than One Million Rows to Database Efficiently',
+      image: require('../assets/img/portfolio/import-million-rows-with-validations.png'),
+      github: 'https://github.com/luizfelipelopes/import-million-rows-with-validations',
+      language: 'Laravel'
+    },
+    {
+      name: 'Pokedex',
+      image: require('../assets/img/portfolio/pokedex.png'),
+      github: 'https://github.com/luizfelipelopes/pokedex',
+      language: 'Laravel'
+    },
+    {
+      name: 'Recipes API - Recipes Management',
+      image: require('../assets/img/portfolio/recepies-api.png'),
+      github: 'https://github.com/luizfelipelopes/recepies-api',
+      language: 'Laravel, Blade'
+    },
+    {
+      name: 'Hospital Management API',
+      image: require('../assets/img/portfolio/hospital-management.png'),
+      github: 'https://github.com/luizfelipelopes/hospital-management',
+      language: 'Laravel, Blade'
+    },
+    {
+      name: 'Blogify',
+      image: require('../assets/img/portfolio/blogify.png'),
+      github: 'https://github.com/luizfelipelopes/blogify',
+      language: 'Laravel, Blade'
+    },
+  ]
 }
 
 // Blog SECTION
