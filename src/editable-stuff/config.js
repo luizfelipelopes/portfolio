@@ -9,7 +9,7 @@ const mainBody = {
   firstName: "Luiz Felipe",
   middleName: "",
   lastName: "Lopes",
-  message: " Passionate about code and music. ",
+  message: "I'm a Fullstack Developer passionate about code and music.",
   icons: [
     {
       image: "fa-github",
@@ -48,7 +48,7 @@ const about = {
   imageSize: 375,
   message:
     "My name is Luiz Felipe Lopes. I've been working with PHP for 10 years and I'm an expert in this language using HTML, CSS, Javascript, MYSQL. I also have experience with Node.js, REST APIs, Laravel, React and Azure. In my free time I like working on side projects and play bass.",
-  resume: "https://docs.google.com/document/d/1aXCaOnyxKYfSAWGd8uUn79OcZnkQ8CLj3QVS-j0NFIg/edit?usp=sharing",
+  resume: "https://docs.google.com/document/d/17I7ftCOes_R89EkdiRATrHWg37SWxCBgpUBYZ-7_S5w/edit?usp=sharing",
 };
 
 const testimonials = {
