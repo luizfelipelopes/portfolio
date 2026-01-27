@@ -28,7 +28,7 @@ const Portfolios = React.forwardRef(({ heading, mobile, web, frontend, backend }
         </h2>
         <Tabs
           className="skills-tabs"
-          defaultActiveKey="hard-skills"
+          defaultActiveKey="back-end"
           id="skills-tabs"
           fill
         >

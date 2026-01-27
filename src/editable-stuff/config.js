@@ -79,13 +79,15 @@ const testimonials = {
 //      i.e: reposLength: 0,
 // If you want to display specfic projects, add the repository names,
 //      i.e ["repository-1", "repo-2"]
-const repos = {
-  show: true,
-  heading: "Recent Projects",
-  gitHubUsername: "luizfelipelopes", //i.e."johnDoe12Gh"
-  reposLength: 4,
-  specificRepos: [],
-};
+// const repos = {
+//   show: true,
+//   heading: "Recent Projects",
+//   gitHubUsername: "luizfelipelopes", //i.e."johnDoe12Gh"
+//   reposLength: 4,
+//   specificRepos: [],
+// };
+
+const repos = {};
 
 // Leadership SECTION
 const leadership = {

@@ -37,29 +37,6 @@ const Home = React.forwardRef((props, ref) => {
         icons={mainBody.icons}
         ref={ref}
       />
-      {about.show && (
-        <AboutMe
-          heading={about.heading}
-          message={about.message}
-          link={about.imageLink}
-          imgSize={about.imageSize}
-          resume={about.resume}
-        />
-      )}
-
-      {
-        experiences.show && (
-          <Experience experiences={experiences} />
-        )
-      }
-      {testimonials.show && (
-        <Testimonials
-          heading={testimonials.heading}
-          data={testimonials.data}
-          imgSize={testimonials.imageSize}
-          showPic={testimonials.showPic}
-        />
-      )}
       {portfolios.show && (
         <Portfolios
           heading={portfolios.heading}
@@ -69,12 +46,13 @@ const Home = React.forwardRef((props, ref) => {
           backend={portfolios.backend}
         />
       )}
-      {repos.show && (
-        <Project
-          heading={repos.heading}
-          username={repos.gitHubUsername}
-          length={repos.reposLength}
-          specfic={repos.specificRepos}
+      {about.show && (
+        <AboutMe
+          heading={about.heading}
+          message={about.message}
+          link={about.imageLink}
+          imgSize={about.imageSize}
+          resume={about.resume}
         />
       )}
       {skills.show && (
@@ -84,6 +62,31 @@ const Home = React.forwardRef((props, ref) => {
           softSkills={skills.softSkills}
         />
       )}
+
+      {
+        experiences.show && (
+          <Experience experiences={experiences} />
+        )
+      }
+
+      {testimonials.show && (
+        <Testimonials
+          heading={testimonials.heading}
+          data={testimonials.data}
+          imgSize={testimonials.imageSize}
+          showPic={testimonials.showPic}
+        />
+      )}
+
+      {repos.show && (
+        <Project
+          heading={repos.heading}
+          username={repos.gitHubUsername}
+          length={repos.reposLength}
+          specfic={repos.specificRepos}
+        />
+      )}
+
 
       {leadership.show && (
         <Leadership
