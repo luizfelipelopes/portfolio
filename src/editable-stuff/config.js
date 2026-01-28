@@ -44,7 +44,7 @@ const mainBody = {
 const about = {
   show: true,
   heading: "About Me",
-  imageLink: require("../editable-stuff/photo-profile.png"),
+  imageLink: require("../editable-stuff/photo-profile2.png"),
   imageSize: 375,
   message:
     "My name is Luiz Felipe Lopes. I've been working with PHP for 10 years and I'm an expert in this language using HTML, CSS, Javascript, MYSQL. I also have experience with Node.js, REST APIs, Laravel, React and Azure. In my free time I like working on side projects and play bass.",
